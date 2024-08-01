@@ -3,6 +3,7 @@ import 'package:chit_chat_app/widgets/custom_blue_button.dart';
 import 'package:chit_chat_app/widgets/custom_text_field.dart';
 import 'package:enefty_icons/enefty_icons.dart';
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 
 class RegisterBody extends StatelessWidget {
   const RegisterBody({super.key});
@@ -28,9 +29,8 @@ class RegisterBody extends StatelessWidget {
           isPassword: true,
         ),
         60.height,
-        const CustomBlueButton(
-          label: 'Register',
-        ),
+        CustomBlueButton(
+            label: 'Register', onPressed: () => Get.offAllNamed('/homePage')),
         4.height,
       ],
     );

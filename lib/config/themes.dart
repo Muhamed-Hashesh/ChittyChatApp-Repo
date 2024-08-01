@@ -38,7 +38,7 @@ ThemeData darkTheme = ThemeData(
     ),
     labelLarge: GoogleFonts.poppins(
       fontSize: 18,
-      fontWeight: FontWeight.w500,
+      fontWeight: FontWeight.w400,
       color: kOnBackgroundColor,
     ),
     labelMedium: GoogleFonts.poppins(
@@ -51,5 +51,8 @@ ThemeData darkTheme = ThemeData(
       fontWeight: FontWeight.w400,
       color: kPrimaryColor,
     ),
+  ),
+  appBarTheme: const AppBarTheme(
+    backgroundColor: kContainerColor,
   ),
 );

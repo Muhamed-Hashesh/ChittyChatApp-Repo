@@ -4,6 +4,7 @@ import 'package:chit_chat_app/widgets/custom_blue_button.dart';
 import 'package:chit_chat_app/widgets/custom_text_field.dart';
 import 'package:enefty_icons/enefty_icons.dart';
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 
 class LoginBody extends StatelessWidget {
   const LoginBody({super.key});
@@ -24,8 +25,9 @@ class LoginBody extends StatelessWidget {
           isPassword: true,
         ),
         60.height,
-        const CustomBlueButton(
+        CustomBlueButton(
           label: 'Login',
+          onPressed: () => Get.offAllNamed('/homePage'),
         ),
         4.height,
         smallLabelTextButton(context, text: 'Forgot Password?', fontSize: 14),

@@ -15,7 +15,10 @@ class SliderActionButton extends StatelessWidget {
       innerColor: Theme.of(context).colorScheme.secondary,
       outerColor: Theme.of(context).colorScheme.primaryContainer,
       text: 'Slide to start now',
-      textStyle: Theme.of(context).textTheme.labelSmall,
+      textStyle: Theme.of(context)
+          .textTheme
+          .labelSmall
+          ?.copyWith(color: Theme.of(context).colorScheme.onPrimaryContainer),
       sliderButtonIcon: SvgPicture.asset(
         'assets/icons/dragable.svg',
         width: 24,

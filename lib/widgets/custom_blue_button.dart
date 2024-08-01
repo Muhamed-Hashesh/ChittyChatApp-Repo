@@ -6,14 +6,16 @@ class CustomBlueButton extends StatelessWidget {
   const CustomBlueButton({
     super.key,
     required this.label,
+    this.onPressed,
   });
 
   final String label;
+  final Function()? onPressed;
 
   @override
   Widget build(BuildContext context) {
     return ElevatedButton(
-      onPressed: () {},
+      onPressed: onPressed,
       style: ElevatedButton.styleFrom(
         fixedSize: const Size(189, 50),
         backgroundColor: Theme.of(context).colorScheme.primary,
