@@ -1,5 +1,6 @@
 import 'package:chit_chat_app/helper/sized_box.dart';
 import 'package:chit_chat_app/helper/texts.dart';
+import 'package:chit_chat_app/views/home_page/tabs/chats_tab_content.dart';
 import 'package:chit_chat_app/views/home_page/widgets/tab_bar_row.dart';
 import 'package:enefty_icons/enefty_icons.dart';
 import 'package:flutter/material.dart';
@@ -68,11 +69,14 @@ class _HomePageState extends State<HomePage> with TickerProviderStateMixin {
         backgroundColor: Theme.of(context).colorScheme.primary,
         child: const Icon(Icons.add, color: Colors.white),
       ),
-      // body: TabBarView(controller: tabController, children: [
-      //   Placeholder(),
-      //   Placeholder(),
-      //   Placeholder(),
-      // ],),
+      body: TabBarView(
+        controller: tabController,
+        children: [
+          ChatsTabContent(),
+          Placeholder(),
+          Placeholder(),
+        ],
+      ),
     );
   }
 }

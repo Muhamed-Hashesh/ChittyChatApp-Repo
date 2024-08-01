@@ -33,6 +33,7 @@ TextButton smallLabelTextButton(BuildContext context,
     onPressed: () {},
     style: ButtonStyle(
       overlayColor: WidgetStateProperty.all(Colors.transparent),
+      padding: WidgetStateProperty.all(EdgeInsets.zero),
     ),
     child: Text(
       text!,
