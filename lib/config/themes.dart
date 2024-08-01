@@ -49,7 +49,7 @@ ThemeData darkTheme = ThemeData(
     labelSmall: GoogleFonts.poppins(
       fontSize: 12,
       fontWeight: FontWeight.w400,
-      color: kOnContainerColor,
+      color: kPrimaryColor,
     ),
   ),
 );
