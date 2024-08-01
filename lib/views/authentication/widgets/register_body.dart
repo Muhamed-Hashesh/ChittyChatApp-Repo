@@ -1,3 +1,7 @@
+import 'package:chit_chat_app/helper/sized_box.dart';
+import 'package:chit_chat_app/widgets/custom_blue_button.dart';
+import 'package:chit_chat_app/widgets/custom_text_field.dart';
+import 'package:enefty_icons/enefty_icons.dart';
 import 'package:flutter/material.dart';
 
 class RegisterBody extends StatelessWidget {
@@ -7,14 +11,27 @@ class RegisterBody extends StatelessWidget {
   Widget build(BuildContext context) {
     return Column(
       children: [
-        Container(
-          width: 150,
-          height: 300,
-          decoration: BoxDecoration(
-            borderRadius: BorderRadius.circular(100),
-            color: Colors.red,
-          ),
-        )
+        40.height,
+        const CustomTextField(
+          icon: EneftyIcons.personalcard_bold,
+          hintText: 'Full Name',
+        ),
+        16.height,
+        const CustomTextField(
+          icon: EneftyIcons.paperclip_outline,
+          hintText: 'Email',
+        ),
+        16.height,
+        const CustomTextField(
+          icon: EneftyIcons.lock_2_bold,
+          hintText: 'Password',
+          isPassword: true,
+        ),
+        60.height,
+        const CustomBlueButton(
+          label: 'Register',
+        ),
+        4.height,
       ],
     );
   }
