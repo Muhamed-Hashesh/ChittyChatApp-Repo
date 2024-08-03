@@ -1,5 +1,5 @@
 import 'package:chit_chat_app/helper/sized_box.dart';
-import 'package:chit_chat_app/views/chat_screen/widgets/bubble_and_time_item_builder.dart';
+import 'package:chit_chat_app/views/chat_screen/widgets/bubble_and_time_item.dart';
 import 'package:chit_chat_app/views/chat_screen/widgets/end_to_end_container.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
@@ -13,10 +13,39 @@ class ChatScreenPage extends StatelessWidget {
     return Scaffold(
       backgroundColor: Theme.of(context).colorScheme.surface,
       appBar: buildAppBar(context),
-      body: ListView(children: const [
-        ENdToEndEncryptionContainer(),
-        BubbleAndTimeItemBuilder(),
-      ]),
+      body: ListView(
+        padding: EdgeInsets.symmetric(horizontal: 16),
+        children: const [
+          ENdToEndEncryptionContainer(),
+          // BubbleAndTimeItemBuilder(),
+          MyBubbleAndTimeItem(
+            isComming: true,
+            text: 'Hello there, how are you today?',
+            date: '10:32 am',
+            imageUrl: null,
+          ),
+          MyBubbleAndTimeItem(
+            isComming: false,
+            text: 'I am good. What about you?',
+            date: '10:32 am',
+            imageUrl: null,
+          ),
+          MyBubbleAndTimeItem(
+            isComming: false,
+            text: 'What\'s your opinion on this image, brother?',
+            date: '10:32 am',
+            imageUrl:
+                'https://velog.velcdn.com/images/steadygo247/post/f598d9b0-4f34-4289-91dd-840ec0a4bcad/image.jpg',
+          ),
+          MyBubbleAndTimeItem(
+            isComming: true,
+            text: 'It\'s better',
+            date: '10:32 am',
+            imageUrl:
+                'https://thetechvate.com/wp-content/uploads/2024/03/3.png',
+          ),
+        ],
+      ),
     );
   }
 

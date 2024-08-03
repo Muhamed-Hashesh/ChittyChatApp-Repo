@@ -14,7 +14,8 @@ class BubbleAndTimeItemBuilder extends StatelessWidget {
       padding: const EdgeInsets.symmetric(horizontal: 16),
       itemCount: 10,
       itemBuilder: (context, index) {
-        return const BubbleAndTimeItem();
+        // return const MyBubbleAndTimeItem();
+        return Container();
       },
     );
   }

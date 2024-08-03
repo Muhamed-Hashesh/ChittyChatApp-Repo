@@ -29,7 +29,7 @@ class LoginBody extends StatelessWidget {
           label: 'Login',
           onPressed: () => Get.offAllNamed('/homePage'),
         ),
-        4.height,
+        16.height,
         smallLabelTextButton(context, text: 'Forgot Password?', fontSize: 14),
       ],
     );

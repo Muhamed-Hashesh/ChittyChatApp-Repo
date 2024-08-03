@@ -17,8 +17,9 @@ class ENdToEndEncryptionContainer extends StatelessWidget {
         alignment: Alignment.center,
         margin: const EdgeInsets.symmetric(vertical: 42),
         decoration: BoxDecoration(
-            color: Theme.of(context).colorScheme.primary.withOpacity(0.2),
-            borderRadius: BorderRadius.circular(16)),
+          color: Theme.of(context).colorScheme.primary.withOpacity(0.2),
+          borderRadius: BorderRadius.circular(16),
+        ),
         child: Row(
           mainAxisAlignment: MainAxisAlignment.center,
           mainAxisSize: MainAxisSize.min,
