@@ -1,4 +1,5 @@
 import 'package:chit_chat_app/views/authentication/auth_page_home.dart';
+import 'package:chit_chat_app/views/chat_screen/chat_screen.dart';
 import 'package:chit_chat_app/views/home_page/home_page.dart';
 import 'package:get/get.dart';
 
@@ -12,6 +13,11 @@ var getPagesPath = [
   GetPage(
     name: '/homePage',
     page: () => const HomePage(),
+    transition: Transition.leftToRightWithFade,
+  ),
+  GetPage(
+    name: '/chatScreen',
+    page: () => const ChatScreenPage(),
     transition: Transition.leftToRightWithFade,
   ),
 ];
