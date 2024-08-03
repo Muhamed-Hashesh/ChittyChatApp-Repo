@@ -1,5 +1,6 @@
 import 'package:chit_chat_app/helper/sized_box.dart';
 import 'package:chit_chat_app/views/chat_screen/widgets/bubble_and_time_item_builder.dart';
+import 'package:chit_chat_app/views/chat_screen/widgets/end_to_end_container.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:ionicons/ionicons.dart';
@@ -12,7 +13,10 @@ class ChatScreenPage extends StatelessWidget {
     return Scaffold(
       backgroundColor: Theme.of(context).colorScheme.surface,
       appBar: buildAppBar(context),
-      body: const BubbleAndTimeItemBuilder(),
+      body: ListView(children: const [
+        ENdToEndEncryptionContainer(),
+        BubbleAndTimeItemBuilder(),
+      ]),
     );
   }
 

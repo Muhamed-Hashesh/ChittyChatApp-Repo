@@ -31,9 +31,15 @@ TextButton smallLabelTextButton(BuildContext context,
     {double fontSize = 12, required String? text, bool isGrey = false}) {
   return TextButton(
     onPressed: () {},
-    style: ButtonStyle(
-      overlayColor: WidgetStateProperty.all(Colors.transparent),
-      padding: WidgetStateProperty.all(EdgeInsets.zero),
+    // style: ButtonStyle(
+    //   tapTargetSize: MaterialTapTargetSize.shrinkWrap,
+    //   overlayColor: WidgetStateProperty.all(Colors.transparent),
+    //   padding: WidgetStateProperty.all(EdgeInsets.zero),
+    // ),
+    style: TextButton.styleFrom(
+      padding: EdgeInsets.zero,
+      minimumSize: const Size(0, 0),
+      tapTargetSize: MaterialTapTargetSize.shrinkWrap,
     ),
     child: Text(
       text!,
