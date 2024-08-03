@@ -1,5 +1,4 @@
 import 'package:chit_chat_app/helper/sized_box.dart';
-import 'package:chit_chat_app/helper/texts.dart';
 import 'package:chit_chat_app/views/chat_screen/widgets/bubble_and_time_item_builder.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
