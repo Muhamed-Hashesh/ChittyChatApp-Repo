@@ -65,8 +65,10 @@ class MyBubbleAndTimeItem extends StatelessWidget {
                   ),
             ),
             8.width,
-            Icon(Ionicons.checkmark_done,
-                color: Theme.of(context).colorScheme.primary, size: 18),
+            !isComming
+                ? Icon(Ionicons.checkmark_done,
+                    color: Theme.of(context).colorScheme.primary, size: 18)
+                : const SizedBox(),
           ],
         ),
         16.height,

@@ -1,4 +1,3 @@
-import 'package:chit_chat_app/views/chat_screen/widgets/bubble_and_time_item.dart';
 import 'package:flutter/material.dart';
 
 class BubbleAndTimeItemBuilder extends StatelessWidget {
