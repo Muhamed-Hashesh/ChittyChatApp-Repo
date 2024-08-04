@@ -36,7 +36,7 @@ class InputChatTextField extends StatelessWidget {
           ),
           IconButton(
             onPressed: () {},
-            icon: const Icon(Ionicons.camera),
+            icon: const Icon(Ionicons.image_outline),
           ),
           IconButton(
             onPressed: () {},

@@ -1,0 +1,40 @@
+[debug] [2024-08-04T17:42:15.768Z] ----------------------------------------------------------------------
+[debug] [2024-08-04T17:42:15.773Z] Command:       /usr/local/bin/node /usr/local/bin/firebase apps:create android chit_chat_app (android) --package-name=com.example.chit_chat_app --json --project=chitchat-app-97c97
+[debug] [2024-08-04T17:42:15.774Z] CLI Version:   13.15.0
+[debug] [2024-08-04T17:42:15.774Z] Platform:      darwin
+[debug] [2024-08-04T17:42:15.774Z] Node Version:  v20.11.1
+[debug] [2024-08-04T17:42:15.774Z] Time:          Sun Aug 04 2024 20:42:15 GMT+0300 (Eastern European Summer Time)
+[debug] [2024-08-04T17:42:15.775Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2024-08-04T17:42:15.783Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2024-08-04T17:42:15.783Z] > authorizing via signed-in user (mohammedhashesh389@gmail.com)
+[info] Create your ANDROID app in project chitchat-app-97c97:
+[debug] [2024-08-04T17:42:15.789Z] >>> [apiv2][query] POST https://firebase.googleapis.com/v1beta1/projects/chitchat-app-97c97/androidApps [none]
+[debug] [2024-08-04T17:42:15.790Z] >>> [apiv2][body] POST https://firebase.googleapis.com/v1beta1/projects/chitchat-app-97c97/androidApps {"displayName":"chit_chat_app (android)","packageName":"com.example.chit_chat_app"}
+[debug] [2024-08-04T17:42:17.264Z] <<< [apiv2][status] POST https://firebase.googleapis.com/v1beta1/projects/chitchat-app-97c97/androidApps 200
+[debug] [2024-08-04T17:42:17.264Z] <<< [apiv2][body] POST https://firebase.googleapis.com/v1beta1/projects/chitchat-app-97c97/androidApps {"name":"operations/workflows/ZjMxMzQ5ODktNmRjNS00NTc0LTk5ZjUtNGIwMDMxNDMyNTky"}
+[debug] [2024-08-04T17:42:17.266Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/operations/workflows/ZjMxMzQ5ODktNmRjNS00NTc0LTk5ZjUtNGIwMDMxNDMyNTky [none]
+[debug] [2024-08-04T17:42:17.567Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/operations/workflows/ZjMxMzQ5ODktNmRjNS00NTc0LTk5ZjUtNGIwMDMxNDMyNTky 200
+[debug] [2024-08-04T17:42:17.567Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/operations/workflows/ZjMxMzQ5ODktNmRjNS00NTc0LTk5ZjUtNGIwMDMxNDMyNTky {"name":"operations/workflows/ZjMxMzQ5ODktNmRjNS00NTc0LTk5ZjUtNGIwMDMxNDMyNTky"}
+[debug] [2024-08-04T17:42:18.068Z] [Create Android app Poller] Retrying task index 0
+[debug] [2024-08-04T17:42:18.068Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/operations/workflows/ZjMxMzQ5ODktNmRjNS00NTc0LTk5ZjUtNGIwMDMxNDMyNTky [none]
+[debug] [2024-08-04T17:42:18.372Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/operations/workflows/ZjMxMzQ5ODktNmRjNS00NTc0LTk5ZjUtNGIwMDMxNDMyNTky 200
+[debug] [2024-08-04T17:42:18.372Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/operations/workflows/ZjMxMzQ5ODktNmRjNS00NTc0LTk5ZjUtNGIwMDMxNDMyNTky {"name":"operations/workflows/ZjMxMzQ5ODktNmRjNS00NTc0LTk5ZjUtNGIwMDMxNDMyNTky"}
+[debug] [2024-08-04T17:42:19.373Z] [Create Android app Poller] Retrying task index 0
+[debug] [2024-08-04T17:42:19.374Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/operations/workflows/ZjMxMzQ5ODktNmRjNS00NTc0LTk5ZjUtNGIwMDMxNDMyNTky [none]
+[debug] [2024-08-04T17:42:19.665Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/operations/workflows/ZjMxMzQ5ODktNmRjNS00NTc0LTk5ZjUtNGIwMDMxNDMyNTky 200
+[debug] [2024-08-04T17:42:19.666Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/operations/workflows/ZjMxMzQ5ODktNmRjNS00NTc0LTk5ZjUtNGIwMDMxNDMyNTky {"name":"operations/workflows/ZjMxMzQ5ODktNmRjNS00NTc0LTk5ZjUtNGIwMDMxNDMyNTky"}
+[debug] [2024-08-04T17:42:21.666Z] [Create Android app Poller] Retrying task index 0
+[debug] [2024-08-04T17:42:21.667Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/operations/workflows/ZjMxMzQ5ODktNmRjNS00NTc0LTk5ZjUtNGIwMDMxNDMyNTky [none]
+[debug] [2024-08-04T17:42:21.986Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/operations/workflows/ZjMxMzQ5ODktNmRjNS00NTc0LTk5ZjUtNGIwMDMxNDMyNTky 200
+[debug] [2024-08-04T17:42:21.986Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/operations/workflows/ZjMxMzQ5ODktNmRjNS00NTc0LTk5ZjUtNGIwMDMxNDMyNTky {"name":"operations/workflows/ZjMxMzQ5ODktNmRjNS00NTc0LTk5ZjUtNGIwMDMxNDMyNTky","done":true,"response":{"@type":"type.googleapis.com/google.firebase.service.v1beta1.AndroidApp","name":"projects/chitchat-app-97c97/androidApps/1:541814658135:android:efc6865e0e1f9b6044bf12","appId":"1:541814658135:android:efc6865e0e1f9b6044bf12","displayName":"chit_chat_app (android)","projectId":"chitchat-app-97c97","packageName":"com.example.chit_chat_app","apiKeyId":"18627c81-925f-4659-ad5d-4701809ac000","state":"ACTIVE","expireTime":"1970-01-01T00:00:00Z","etag":"1_d150d439-bdf0-4d76-ac6a-b38479df6189"}}
+[info] 
+[info] 🎉🎉🎉 Your Firebase ANDROID App is ready! 🎉🎉🎉
+[info] 
+[info] App information:
+[info]   - App ID: 1:541814658135:android:efc6865e0e1f9b6044bf12
+[info]   - Display name: chit_chat_app (android)
+[info]   - Package name: com.example.chit_chat_app
+[info] 
+[info] You can run this command to print out your new app's Google Services config:
+[info]   firebase apps:sdkconfig ANDROID 1:541814658135:android:efc6865e0e1f9b6044bf12
