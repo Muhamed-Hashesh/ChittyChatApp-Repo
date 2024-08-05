@@ -31,7 +31,7 @@ class LoginBody extends StatelessWidget {
         60.height,
         Obx(
           () => loginController.isLoading.value
-              ? CircularProgressIndicator()
+              ? const CircularProgressIndicator()
               : CustomBlueButton(
                   label: 'Login',
                   onPressed: () {

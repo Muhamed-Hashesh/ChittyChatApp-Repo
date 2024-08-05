@@ -25,9 +25,7 @@ class AuthPageHome extends StatelessWidget {
                   hasTitle: true,
                 ),
                 40.height,
-                Obx(
-                  () => const AuthBodyContainer(),
-                ),
+                const AuthBodyContainer(),
                 32.height,
                 CustomButton(
                   title: 'Google',
