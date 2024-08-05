@@ -8,11 +8,13 @@ class CustomTextField extends StatefulWidget {
     this.icon,
     this.isPassword = false,
     this.onChange,
+    this.controller,
   });
 
   final String? hintText;
   final IconData? icon;
   final bool isPassword;
+  final TextEditingController? controller;
   final Function(String?)? onChange;
 
   @override
@@ -24,6 +26,7 @@ class CustomTextFieldState extends State<CustomTextField> {
   @override
   Widget build(BuildContext context) {
     return TextFormField(
+      controller: widget.controller,
       validator: (value) {
         if (value == null || value.isEmpty) {
           return 'Please enter some text';

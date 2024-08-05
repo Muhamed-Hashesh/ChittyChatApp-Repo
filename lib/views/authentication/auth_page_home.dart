@@ -1,3 +1,4 @@
+import 'package:chit_chat_app/controller/auth_controller/register_controller.dart';
 import 'package:chit_chat_app/helper/sized_box.dart';
 import 'package:chit_chat_app/views/authentication/widgets/auth_body_container.dart';
 import 'package:chit_chat_app/widgets/app_logo.dart';
@@ -10,20 +11,23 @@ class AuthPageHome extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    RegisterController registerController = Get.put(RegisterController());
     return Scaffold(
       backgroundColor: Theme.of(context).colorScheme.surface,
       body: SafeArea(
         child: Padding(
-          padding: const EdgeInsets.only(left: 16, right: 16, top: 16),
+          padding: const EdgeInsets.only(left: 16, right: 16),
           child: SingleChildScrollView(
             child: Column(
               children: [
-                32.height,
+                48.height,
                 const AppLogo(
                   hasTitle: true,
                 ),
-                60.height,
-                const AuthBodyContainer(),
+                40.height,
+                Obx(
+                  () => const AuthBodyContainer(),
+                ),
                 32.height,
                 CustomButton(
                   title: 'Google',
@@ -39,7 +43,8 @@ class AuthPageHome extends StatelessWidget {
                   color: Theme.of(context).colorScheme.primaryContainer,
                   onTap: () {},
                   isAuthenticationMethod: true,
-                )
+                ),
+                16.height,
               ],
             ),
           ),

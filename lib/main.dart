@@ -2,6 +2,7 @@ import 'dart:developer';
 import 'package:chit_chat_app/config/get_pages_path.dart';
 import 'package:chit_chat_app/config/themes.dart';
 import 'package:chit_chat_app/firebase_options.dart';
+import 'package:chit_chat_app/views/home_page/home_page.dart';
 import 'package:chit_chat_app/views/welcome_page/welcome_page.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:firebase_core/firebase_core.dart';
@@ -46,7 +47,9 @@ class _MyAppState extends State<MyApp> {
       // darkTheme: darkTheme,
       // themeMode: ThemeMode.dark,
       getPages: getPagesPath,
-      home: const WelcomePage(),
+      home: FirebaseAuth.instance.currentUser == null
+          ? const WelcomePage()
+          : const HomePage(),
     );
   }
 }

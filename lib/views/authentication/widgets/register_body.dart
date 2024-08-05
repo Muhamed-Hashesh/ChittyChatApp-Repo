@@ -1,3 +1,4 @@
+import 'package:chit_chat_app/controller/auth_controller/register_controller.dart';
 import 'package:chit_chat_app/helper/sized_box.dart';
 import 'package:chit_chat_app/widgets/custom_blue_button.dart';
 import 'package:chit_chat_app/widgets/custom_text_field.dart';
@@ -10,6 +11,7 @@ class RegisterBody extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    RegisterController registerController = Get.put(RegisterController());
     return Column(
       children: [
         40.height,
@@ -18,19 +20,31 @@ class RegisterBody extends StatelessWidget {
           hintText: 'Full Name',
         ),
         16.height,
-        const CustomTextField(
+        CustomTextField(
+          controller: registerController.email,
           icon: EneftyIcons.paperclip_outline,
           hintText: 'Email',
         ),
         16.height,
-        const CustomTextField(
+        CustomTextField(
+          controller: registerController.password,
           icon: EneftyIcons.lock_2_bold,
           hintText: 'Password',
           isPassword: true,
         ),
         60.height,
-        CustomBlueButton(
-            label: 'Register', onPressed: () => Get.offAllNamed('/homePage')),
+        Obx(
+          () => registerController.isLoading.value
+              ? const CircularProgressIndicator()
+              : CustomBlueButton(
+                  label: 'Register',
+                  onPressed: () {
+                    registerController.registerMethod(
+                        email: registerController.email.text,
+                        password: registerController.password.text);
+                    // Get.offAllNamed('/homePage');
+                  }),
+        ),
         4.height,
       ],
     );

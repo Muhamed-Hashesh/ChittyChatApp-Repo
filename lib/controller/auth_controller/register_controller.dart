@@ -6,11 +6,12 @@ import 'dart:developer';
 class RegisterController extends GetxController {
   final email = TextEditingController();
   final password = TextEditingController();
-
+  RxBool isLoading = false.obs;
   final credential = FirebaseAuth.instance;
 
   Future<void> registerMethod(
       {required String email, required String password}) async {
+    isLoading.value = true;
     try {
       await credential.createUserWithEmailAndPassword(
         email: email,
@@ -25,5 +26,6 @@ class RegisterController extends GetxController {
     } catch (e) {
       log(e.toString());
     }
+    isLoading.value = false;
   }
 }
