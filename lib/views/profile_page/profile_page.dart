@@ -46,12 +46,22 @@ class ProfilePage extends StatelessWidget {
                 ),
                 16.height,
                 const Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                   children: [
                     ProfileActionsContainer(
                       contentColor: Color(0XFF039C00),
                       icon: Ionicons.call_outline,
                       label: 'Call',
-                      bgColor: Color(0XFFCEFFD3),
+                    ),
+                    ProfileActionsContainer(
+                      contentColor: Color(0XFF0057FF),
+                      icon: Ionicons.chatbox,
+                      label: 'Chat',
+                    ),
+                    ProfileActionsContainer(
+                      contentColor: Color(0XFFF93C00),
+                      icon: Ionicons.basket,
+                      label: 'Delete',
                     ),
                   ],
                 )

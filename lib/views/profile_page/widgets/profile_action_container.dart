@@ -6,12 +6,10 @@ class ProfileActionsContainer extends StatelessWidget {
     super.key,
     required this.label,
     required this.icon,
-    required this.bgColor,
     required this.contentColor,
   });
   final String label;
   final IconData icon;
-  final Color bgColor;
   final Color contentColor;
 
   @override
@@ -20,9 +18,9 @@ class ProfileActionsContainer extends StatelessWidget {
       alignment: Alignment.center,
       height: 50,
       width: 100,
-      padding: const EdgeInsets.symmetric(horizontal: 16),
+      padding: const EdgeInsets.symmetric(horizontal: 10),
       decoration: BoxDecoration(
-        color: bgColor.withOpacity(0.2),
+        color: contentColor.withOpacity(0.2),
         borderRadius: BorderRadius.circular(16),
       ),
       child: Row(
@@ -32,7 +30,7 @@ class ProfileActionsContainer extends StatelessWidget {
             icon,
             color: contentColor,
           ),
-          8.width,
+          5.width,
           Text(
             label,
             style: Theme.of(context).textTheme.labelLarge?.copyWith(
