@@ -1,5 +1,8 @@
 import 'package:chit_chat_app/helper/back_button.dart';
+import 'package:chit_chat_app/helper/sized_box.dart';
+import 'package:chit_chat_app/views/profile_page/widgets/profile_action_container.dart';
 import 'package:flutter/material.dart';
+import 'package:ionicons/ionicons.dart';
 
 class ProfilePage extends StatelessWidget {
   const ProfilePage({super.key});
@@ -17,7 +20,7 @@ class ProfilePage extends StatelessWidget {
         children: [
           Container(
             margin: const EdgeInsets.all(16),
-            padding: const EdgeInsets.all(16),
+            padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 24),
             // height: 200,
             decoration: BoxDecoration(
               color: Theme.of(context).colorScheme.primaryContainer,
@@ -41,6 +44,17 @@ class ProfilePage extends StatelessWidget {
                         color: Theme.of(context).colorScheme.onPrimaryContainer,
                       ),
                 ),
+                16.height,
+                const Row(
+                  children: [
+                    ProfileActionsContainer(
+                      contentColor: Color(0XFF039C00),
+                      icon: Ionicons.call_outline,
+                      label: 'Call',
+                      bgColor: Color(0XFFCEFFD3),
+                    ),
+                  ],
+                )
               ],
             ),
           )
