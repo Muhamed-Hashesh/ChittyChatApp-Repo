@@ -28,9 +28,12 @@ Text largeText(BuildContext context, {Color? color}) {
 }
 
 TextButton smallLabelTextButton(BuildContext context,
-    {double fontSize = 12, required String? text, bool isGrey = false}) {
+    {double fontSize = 12,
+    required String? text,
+    bool isGrey = false,
+    Function()? onTap}) {
   return TextButton(
-    onPressed: () {},
+    onPressed: onTap,
     // style: ButtonStyle(
     //   tapTargetSize: MaterialTapTargetSize.shrinkWrap,
     //   overlayColor: WidgetStateProperty.all(Colors.transparent),
