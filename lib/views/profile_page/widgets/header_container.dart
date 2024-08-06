@@ -38,28 +38,32 @@ class ProfileHeaderContainer extends StatelessWidget {
                 ),
           ),
           16.height,
-          const Row(
-            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-            children: [
-              ProfileActionsContainer(
-                contentColor: Color(0XFF039C00),
-                icon: Ionicons.call_outline,
-                label: 'Call',
-              ),
-              ProfileActionsContainer(
-                contentColor: Color(0XFF0057FF),
-                icon: Ionicons.chatbubble,
-                label: 'Chat',
-              ),
-              ProfileActionsContainer(
-                contentColor: Color(0XFFF93C00),
-                icon: Ionicons.basket,
-                label: 'Delete',
-              ),
-            ],
-          )
+          actionsRow()
         ],
       ),
+    );
+  }
+
+  Row actionsRow() {
+    return const Row(
+      mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+      children: [
+        ProfileActionsContainer(
+          contentColor: Color(0XFF039C00),
+          icon: Ionicons.call_outline,
+          label: 'Call',
+        ),
+        ProfileActionsContainer(
+          contentColor: Color(0XFF0057FF),
+          icon: Ionicons.chatbubble,
+          label: 'Chat',
+        ),
+        ProfileActionsContainer(
+          contentColor: Color(0XFFF93C00),
+          icon: Ionicons.basket,
+          label: 'Delete',
+        ),
+      ],
     );
   }
 }
