@@ -31,7 +31,7 @@ var getPagesPath = [
   GetPage(
     name: '/profilePage',
     page: () => const ProfilePage(),
-    transition: Transition.upToDown,
+    transition: Transition.leftToRight,
   ),
   GetPage(
     name: '/editProfile',
