@@ -20,16 +20,16 @@ var getPagesPath = [
   GetPage(
     name: '/homePage',
     page: () => const HomePage(),
-    transition: Transition.leftToRightWithFade,
+    transition: Transition.leftToRight,
   ),
   GetPage(
     name: '/chatScreen',
     page: () => const ChatScreenPage(),
-    transition: Transition.leftToRightWithFade,
+    transition: Transition.leftToRight,
   ),
   GetPage(
     name: '/profilePage',
     page: () => const ProfilePage(),
-    transition: Transition.leftToRightWithFade,
+    transition: Transition.upToDown,
   ),
 ];

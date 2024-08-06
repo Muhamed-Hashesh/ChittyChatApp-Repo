@@ -28,9 +28,12 @@ class _HomePageState extends State<HomePage> with TickerProviderStateMixin {
             mainAxisAlignment: MainAxisAlignment.center,
             mainAxisSize: MainAxisSize.min,
             children: [
-              SvgPicture.asset(
-                'assets/icons/logo.svg',
-                width: 30,
+              GestureDetector(
+                onTap: () => Get.toNamed('/profilePage'),
+                child: SvgPicture.asset(
+                  'assets/icons/logo.svg',
+                  width: 30,
+                ),
               ),
               16.width,
               Text(
