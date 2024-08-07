@@ -1,6 +1,7 @@
 import 'package:chit_chat_app/helper/sized_box.dart';
 import 'package:chit_chat_app/views/profile_page/widgets/edit_profile_image.dart';
 import 'package:chit_chat_app/views/profile_page/widgets/profile_app_bar.dart';
+import 'package:chit_chat_app/widgets/custom_blue_button.dart';
 import 'package:chit_chat_app/widgets/custom_text_field.dart';
 import 'package:flutter/material.dart';
 import 'package:ionicons/ionicons.dart';
@@ -23,22 +24,36 @@ class EditProfilePage extends StatelessWidget {
         child: Column(
           mainAxisSize: MainAxisSize.min,
           children: [
-            EditProfileImage(),
+            const EditProfileImage(),
             16.height,
-            CustomTextField(
+            const CustomTextField(
               hintText: 'Name',
               icon: Ionicons.person_outline,
             ),
             8.height,
-            CustomTextField(
-              hintText: 'Name',
-              icon: Ionicons.person_outline,
+            const CustomTextField(
+              hintText: 'Email',
+              icon: Ionicons.mail,
             ),
             8.height,
-            CustomTextField(
-              hintText: 'Name',
-              icon: Ionicons.person_outline,
+            const CustomTextField(
+              hintText: 'Old Password',
+              icon: Ionicons.lock_closed_outline,
+              isPassword: true,
             ),
+            8.height,
+            const CustomTextField(
+              hintText: 'New Password',
+              icon: Ionicons.lock_closed_outline,
+              isPassword: true,
+            ),
+            24.height,
+            CustomBlueButton(
+              label: 'Save',
+              onPressed: () {},
+              prefixIcon: Ionicons.save_outline,
+            ),
+            // 16.height,
           ],
         ),
       ),
