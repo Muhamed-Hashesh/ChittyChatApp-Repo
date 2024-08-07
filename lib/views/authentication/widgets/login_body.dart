@@ -34,7 +34,7 @@ class LoginBody extends StatelessWidget {
           () => loginController.isLoading.value
               ? const CircularProgressIndicator()
               : CustomBlueButton(
-                  prefixIcon: Ionicons.key,
+                  prefixIcon: Ionicons.log_in_outline,
                   label: 'Login',
                   onPressed: () {
                     loginController.loginMethod(
