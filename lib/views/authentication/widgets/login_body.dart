@@ -6,6 +6,7 @@ import 'package:chit_chat_app/widgets/custom_text_field.dart';
 import 'package:enefty_icons/enefty_icons.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'package:ionicons/ionicons.dart';
 
 class LoginBody extends StatelessWidget {
   const LoginBody({super.key});
@@ -33,6 +34,7 @@ class LoginBody extends StatelessWidget {
           () => loginController.isLoading.value
               ? const CircularProgressIndicator()
               : CustomBlueButton(
+                  prefixIcon: Ionicons.key,
                   label: 'Login',
                   onPressed: () {
                     loginController.loginMethod(
