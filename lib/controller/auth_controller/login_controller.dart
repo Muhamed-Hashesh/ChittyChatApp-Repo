@@ -1,3 +1,4 @@
+import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
@@ -9,6 +10,7 @@ class LoginController extends GetxController {
   RxBool isLoading = false.obs;
 
   final credential = FirebaseAuth.instance;
+  final firestore = FirebaseFirestore.instance;
 
   Future<void> loginMethod(
       {required String email, required String password}) async {
