@@ -37,6 +37,7 @@ class RegisterBody extends StatelessWidget {
           () => registerController.isLoading.value
               ? const CircularProgressIndicator()
               : CustomBlueButton(
+                  prefixIcon: 'assets/icons/connect.svg',
                   label: 'Register',
                   onPressed: () {
                     registerController.registerMethod(

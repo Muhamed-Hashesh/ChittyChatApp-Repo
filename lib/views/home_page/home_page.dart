@@ -2,7 +2,6 @@ import 'package:chit_chat_app/helper/sized_box.dart';
 import 'package:chit_chat_app/views/home_page/tabs/chats_tab_content.dart';
 import 'package:chit_chat_app/views/home_page/widgets/tab_bar_row.dart';
 import 'package:enefty_icons/enefty_icons.dart';
-import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:get/get.dart';
@@ -58,10 +57,7 @@ class _HomePageState extends State<HomePage> with TickerProviderStateMixin {
             ),
           ),
           IconButton(
-            onPressed: () async {
-              await FirebaseAuth.instance.signOut();
-              Get.offAllNamed('/welcomePage');
-            },
+            onPressed: () {},
             icon: Icon(
               Icons.more_vert,
               color: Theme.of(context).colorScheme.onPrimary,

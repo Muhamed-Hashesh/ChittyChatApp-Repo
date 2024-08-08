@@ -42,7 +42,7 @@ class EditProfileContainerContent extends StatelessWidget {
         CustomBlueButton(
           label: 'Save',
           onPressed: () {},
-          prefixIcon: Ionicons.save_outline,
+          prefixIcon: 'assets/icons/save.svg',
         ),
         // 16.height,
       ],

@@ -12,7 +12,7 @@ class CustomBlueButton extends StatelessWidget {
 
   final String label;
   final Function()? onPressed;
-  final IconData? prefixIcon;
+  final String? prefixIcon;
 
   @override
   Widget build(BuildContext context) {
@@ -28,8 +28,7 @@ class CustomBlueButton extends StatelessWidget {
       child: Row(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
-          // SvgPicture.asset('assets/icons/connect.svg'),
-          Icon(prefixIcon),
+          SvgPicture.asset(prefixIcon!),
           8.width,
           Text(
             label,

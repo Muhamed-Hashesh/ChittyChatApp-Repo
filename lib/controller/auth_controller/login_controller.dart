@@ -26,4 +26,9 @@ class LoginController extends GetxController {
     }
     isLoading.value = false;
   }
+
+  Future<void> logoutMethod() async {
+    await FirebaseAuth.instance.signOut();
+    Get.offAllNamed('/welcomePage');
+  }
 }
