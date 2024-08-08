@@ -44,8 +44,6 @@ class _MyAppState extends State<MyApp> {
       debugShowCheckedModeBanner: false,
       title: 'ChitChatty',
       theme: darkTheme,
-      // darkTheme: darkTheme,
-      // themeMode: ThemeMode.dark,
       getPages: getPagesPath,
       home: FirebaseAuth.instance.currentUser == null
           ? const WelcomePage()

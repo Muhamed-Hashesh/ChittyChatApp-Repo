@@ -18,7 +18,7 @@ class ChatScreenPage extends StatelessWidget {
         children: [
           Expanded(
             child: ListView(
-              padding: EdgeInsets.symmetric(horizontal: 16),
+              padding: const EdgeInsets.symmetric(horizontal: 16),
               children: const [
                 ENdToEndEncryptionContainer(),
                 // BubbleAndTimeItemBuilder(),
