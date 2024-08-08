@@ -24,7 +24,9 @@ class ProfilePage extends StatelessWidget {
               title: 'Logout',
               color: Theme.of(context).colorScheme.error,
               textColor: Theme.of(context).colorScheme.onError,
-              onTap: () => logout.logoutMethod,
+              onTap: () {
+                logout.logoutMethod();
+              },
             ),
           ),
         ],
