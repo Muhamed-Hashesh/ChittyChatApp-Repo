@@ -6,7 +6,6 @@ import 'package:chit_chat_app/widgets/custom_text_field.dart';
 import 'package:enefty_icons/enefty_icons.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:ionicons/ionicons.dart';
 
 class LoginBody extends StatelessWidget {
   const LoginBody({super.key});
